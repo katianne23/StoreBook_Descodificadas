@@ -6,76 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StoreBooks</title>
-     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="assets/img/StoryBook-removebg-preview.png" width="100px" alt="Storebooks">
+        <div class="header">
+            <div class="logo">
+                <img src="assets/img/StoryBook-removebg-preview.png" width="100px" alt="Storebooks">
+            </div>
+            <nav>
+                <ul>
+                    <li><a>Inicio</a></li>
+                    <li><a>Quem Somos</a></li>
+                    <li><a>Contatos</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a>Inicio</a></li>
-                <li><a>Quem Somos</a></li>
-                <li><a>Contatos</a></li>
-            </ul>
+
+        <div class="title">
             <h1>Os Livros dão asas a imaginação!</h1>
-        </nav>
+        </div>
+
     </header>
+    <h2 class="h2">Ofertas do Dia</h2>
     <section class="home">
-        <h2>Ofertas do Dia</h2>
-        <div class="card">
-            <img src="assets/img/mulheres.jfif" alt="Mulheres Improváveis" width="100px">
-            <div class="container">
-                <h3>Mulheres Improváveis</h3>
-                <h5>Livro por Viviane Martinello</h5>
-                <span>por 22,99 R$</span>
-                <button>Comprar</button>
+       
+        <div class="bid">
+            <div class="card">
+                <img src="assets/img/mulheres.jfif" alt="Mulheres Improváveis" width="100px">
+                <div class="container">
+                    <h3>Mulheres Improváveis</h3>
+                    <h5>Livro por Viviane Martinello</h5>
+                    <span>por 22,99 R$</span>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img/imper.jpg" alt="Todas as suas imperfeições" width="100px">
+                <div class="container">
+                    <h3>Todas as suas Imperfeições</h3>
+                    <h5>Livro por Colleen Hoover</h5>
+                    <span>por 22,99 R$</span>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img/aurora.jpg" alt="Aurora: O despertar da Mulher exausta" width="10px">
+                <div class="container">
+                    <h3>Aurora: O despertar da Mulher exaust</h3>
+                    <h5>Livro por Marcela Ceribelli</h5>
+                    <span>por 22,99 R$</span>
+                    <button>Comprar</button>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <img src="assets/img/imper.jpg" alt="Todas as suas imperfeições" width="100px">
-            <div class="container">
-                <h3>Todas as suas Imperfeições</h3>
-                <h5>Livro por Colleen Hoover</h5>
-                <span>por 22,99 R$</span>
-                <button>Comprar</button>
-            </div>
-        </div>
-        <div class="card">
-            <img src="assets/img/aurora.jpg" alt="Aurora: O despertar da Mulher exausta" width="100px">
-            <div class="containe">
-                <h3>Aurora: O despertar da Mulher exaust</h3>
-                <h5>Livro por Marcela Ceribelli</h5>
-                <span>por 22,99 R$</span>
-                <button>Comprar</button>
-            </div>
-        </div>
+
     </section>
 
     <section class="box">
         <h2>Box em Ofertas</h2>
-        <div class="box__circle">
-            <a href=""><img src="assets/img/box harry potter.jpg" alt="Box Harry potter" width="100px"></a>
-        </div>
-        <div class="box__circle">
-            <a href=""><img src="assets/img/bridgerton.jpg" alt="Bridgerton" width="100px"></a>
-        </div>
-        <div class="box__circle">
-            <a href=""><img src="assets/img/percy.jpg" alt="Box Percy Jacson" width="100px"></a>
-        </div>
-        <div class="box__circle">
-            <a href=""><img src="assets/img/shelock.jpg" alt="Box Sherlock Holmes" width="100px"></a>
+        <div class="boxes">
+
+            <div class="box__circle">
+                <a href=""><img src="assets/img/box harry potter.jpg" alt="Box Harry potter" width="100px"></a>
+            </div>
+            <div class="box__circle">
+                <a href=""><img src="assets/img/bridgerton.jpg" alt="Bridgerton" width="100px"></a>
+            </div>
+            <div class="box__circle">
+                <a href=""><img src="assets/img/percy.jpg" alt="Box Percy Jacson" width="100px"></a>
+            </div>
+            <div class="box__circle">
+                <a href=""><img src="assets/img/shelock.jpg" alt="Box Sherlock Holmes" width="100px"></a>
+            </div>
         </div>
     </section>
     <section class="Offers">
         <div class="link__form">
-            <pre>
+            <p>
                 Que fica por dentro das nossas Ofertas
                 preencha nosso formulário
-            </pre>
+            </p>
             <button>Recerber Ofertas</button>
         </div>
         <h2>Dicas de Leituras</h2>
@@ -87,30 +101,22 @@
                    gyroscope; 
                    picture-in-picture; web-share" allowfullscreen>
         </iframe>
-        <iframe 
-            width="700" height="400" 
-            src="https://www.youtube.com/embed/4vkNTnv8huU"
-            title="12 livros para refletir sobre o mundo em transformação | Leandro Karnal" 
-            frameborder="0"
-            allow="accelerometer; 
+        <iframe width="700" height="400" src="https://www.youtube.com/embed/4vkNTnv8huU"
+            title="12 livros para refletir sobre o mundo em transformação | Leandro Karnal" frameborder="0" allow="accelerometer; 
                    autoplay; 
                    clipboard-write; 
                    encrypted-media; 
                    gyroscope; 
                    picture-in-picture; 
-                   web-share"
-            allowfullscreen>
+                   web-share" allowfullscreen>
         </iframe>
     </section>
 
     <section class="location">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4067993.469549929!2d-41.58276322604438!3d-5.317193211792072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bdb31827e686c5%3A0x3bb435e0af957842!2zQ2VhcsOh!5e0!3m2!1spt-BR!2sbr!4v1680613520452!5m2!1spt-BR!2sbr" 
-            width="900" 
-            height="550" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
+        <h2>Onde Estamos</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4067993.469549929!2d-41.58276322604438!3d-5.317193211792072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bdb31827e686c5%3A0x3bb435e0af957842!2zQ2VhcsOh!5e0!3m2!1spt-BR!2sbr!4v1680613520452!5m2!1spt-BR!2sbr"
+            width="900" height="550" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </section>
@@ -120,16 +126,20 @@
         <div class="netssocial">
             <h3>Acesse as nossas Redes sociais</h2>
                 <a href="">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAalJREFUSEvtlj1Lw1AUht/TRnAR66BwM7WrU9o6KugvUFdBaLHxAxfd3NRfIE5+tFIFwdH+AVF0tbd1EEc7SLIqdKhScyRCNYlW1CZUsGcJXE7Ok/d85FxCm4zaxMXfAif2zBQs9JPFJ8U5VQaRlQ+KEznzAozhdxhPS1099BvuAid2jDmEaNsDuZG6GAwWnDVXAax5IFWpi56AwcYIQOdOCIOPSro6FSjYDh7fNeaJaAWACuD48Sk8c704UA0c7DegWTxf51jbvdMI4V4bxl21q3I6dv8t8FDWHLWAU4/zutTFa8Mlsqb9tBvwzaQuKJkzJhi0AUbU9S5TwXrm5fKCqHg/wKX4N2Aw0iDkm5aIULHCtbhXfetg0D3AkS97g3hTZtQlp48PYBfyAcBrjV1GqMiMiPkPZqTlrNi3AzcpFyyl1udMd8uKGTgo6SLlVJPMGgUGjTvPQsDYpS7OGmctg4l4sphRC07IZ93vO9gbsNnYdcAt17iT6k5zNeb7y3HS8rcRpd6tOX8G9ToqjbWmbZlRRXGvvrpSK3s3z3f8fL0I/OT28v/AL98QPC4t3gPUAAAAAElFTkSuQmCC"/>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAalJREFUSEvtlj1Lw1AUht/TRnAR66BwM7WrU9o6KugvUFdBaLHxAxfd3NRfIE5+tFIFwdH+AVF0tbd1EEc7SLIqdKhScyRCNYlW1CZUsGcJXE7Ok/d85FxCm4zaxMXfAif2zBQs9JPFJ8U5VQaRlQ+KEznzAozhdxhPS1099BvuAid2jDmEaNsDuZG6GAwWnDVXAax5IFWpi56AwcYIQOdOCIOPSro6FSjYDh7fNeaJaAWACuD48Sk8c704UA0c7DegWTxf51jbvdMI4V4bxl21q3I6dv8t8FDWHLWAU4/zutTFa8Mlsqb9tBvwzaQuKJkzJhi0AUbU9S5TwXrm5fKCqHg/wKX4N2Aw0iDkm5aIULHCtbhXfetg0D3AkS97g3hTZtQlp48PYBfyAcBrjV1GqMiMiPkPZqTlrNi3AzcpFyyl1udMd8uKGTgo6SLlVJPMGgUGjTvPQsDYpS7OGmctg4l4sphRC07IZ93vO9gbsNnYdcAt17iT6k5zNeb7y3HS8rcRpd6tOX8G9ToqjbWmbZlRRXGvvrpSK3s3z3f8fL0I/OT28v/AL98QPC4t3gPUAAAAAElFTkSuQmCC" />
                 </a>
                 <a href="">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAuxJREFUSEvlVk1O20AYfV8cVLoi3dUIqeEENWn3DTcIJ2iQYqSuSk8APQFkVQkjkZ6g3IB0XxxzAoKE8LJmF0QyXzX+CTPGjm1YsKg3UZLxvPe+ed/7hvBCD70QLioDf3T89hS0UgNbkrQAecQcjHbM31VElAK2fvjN2hL2wNQBuJENQAGIT4WY9b2dNa+IxEJg6+SyUZstH4DRLdpI+58wEMbkm7e9HuS9lwtsHV1bBtVPOC5pJWC5mDAWYraVpz4TWILWqH6WX9ayNCgQPN3MAn8ELMtrTF+fKUqvAIwBfCoFx3wRriN6H31iLIzJRrrsj4A3HH9AwOcEpAZs/rHNYWiwOgZgbjCRRxEZMNAkZgtEgZii630xx1HFjFGyBwM/R7ap+UQDjje/VJWJKdblZqXUKotajs/aPjzbUEuuAbeObw7B9FV9IVFcBTitOK6MploHdnyp7J0CciXqE2tRW2QRCttwuix7WdmLAtd++yZZPwfOYgnGtrtjDqqoTda2jvwuCCd51ZsDyygUwNmic6lCIFb9V32HiLfOe6unkdnjp+Xc7AJ0oC50bbNUpOYRShsMwHfXNvcLgZ9irIREVodkAmeV+jln/OH4psNMv7RqKJ55MFcUEFoPMzAc2eZmlbNN1qaDSP4ulF5Ot5OcJit5LMsSyHI0gFvXNucjdVGAyIxO+nBf1Cf9on6OnSwDKDSQ+qRjMzcypfWJKRCAtH9YBVn6GnE/aYm5kY6uLSLjgIB2XlXUMmuufmgrX7Ldk9+lqwWjqQZBVnZn9axGgLjv9lZ3tZ5OMww3uX81lGMtMVecah0i9tJqFcKP/RGWiS/E0l27cCzKtXEPyqxdAWHg9sztImO1HH+YMbNvBc/apS4CWgAYfJoMdAJ5TNxwe+Z6FomW4+uKpVKIbqWrzxw8mjLybMIzl09ejGrxSNwXxt3+ky57qqroesu7xGie26udLMVhYBAH4p4Oy1wcnjUEis590f//H/A/BkVsLg8yesQAAAAASUVORK5CYII="/>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAuxJREFUSEvlVk1O20AYfV8cVLoi3dUIqeEENWn3DTcIJ2iQYqSuSk8APQFkVQkjkZ6g3IB0XxxzAoKE8LJmF0QyXzX+CTPGjm1YsKg3UZLxvPe+ed/7hvBCD70QLioDf3T89hS0UgNbkrQAecQcjHbM31VElAK2fvjN2hL2wNQBuJENQAGIT4WY9b2dNa+IxEJg6+SyUZstH4DRLdpI+58wEMbkm7e9HuS9lwtsHV1bBtVPOC5pJWC5mDAWYraVpz4TWILWqH6WX9ayNCgQPN3MAn8ELMtrTF+fKUqvAIwBfCoFx3wRriN6H31iLIzJRrrsj4A3HH9AwOcEpAZs/rHNYWiwOgZgbjCRRxEZMNAkZgtEgZii630xx1HFjFGyBwM/R7ap+UQDjje/VJWJKdblZqXUKotajs/aPjzbUEuuAbeObw7B9FV9IVFcBTitOK6MploHdnyp7J0CciXqE2tRW2QRCttwuix7WdmLAtd++yZZPwfOYgnGtrtjDqqoTda2jvwuCCd51ZsDyygUwNmic6lCIFb9V32HiLfOe6unkdnjp+Xc7AJ0oC50bbNUpOYRShsMwHfXNvcLgZ9irIREVodkAmeV+jln/OH4psNMv7RqKJ55MFcUEFoPMzAc2eZmlbNN1qaDSP4ulF5Ot5OcJit5LMsSyHI0gFvXNucjdVGAyIxO+nBf1Cf9on6OnSwDKDSQ+qRjMzcypfWJKRCAtH9YBVn6GnE/aYm5kY6uLSLjgIB2XlXUMmuufmgrX7Ldk9+lqwWjqQZBVnZn9axGgLjv9lZ3tZ5OMww3uX81lGMtMVecah0i9tJqFcKP/RGWiS/E0l27cCzKtXEPyqxdAWHg9sztImO1HH+YMbNvBc/apS4CWgAYfJoMdAJ5TNxwe+Z6FomW4+uKpVKIbqWrzxw8mjLybMIzl09ejGrxSNwXxt3+ky57qqroesu7xGie26udLMVhYBAH4p4Oy1wcnjUEis590f//H/A/BkVsLg8yesQAAAAASUVORK5CYII=" />
                 </a>
                 <a href="">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAqdJREFUSEvVlkFO21AQhv9xXDWsoDuMKpGcgCSwLz0B4QBUSYUjdVVuQHKCpiukGCmUCxROULouGCN1D4sqVldNVkRq8qYa2wnGscEBpNC3S/Lyvjf//G9mCDNaNCMunje40L5coL/ZlTTq8Iv+hVPNd+/bmxixwLTB3C6Iy2Dk7jvo1u+EKzAdKf26kXSJWPCa5a4rQjsE7AFwUsILAOa9vYQrpYabTu31xH8nwF6kw+y5QAl8PBzQjvPBuEoJ9bYVWr8KGmWaAN548Ey/GI18Alza7zTB9FGgZ+ZSeRqg7C3u/97KsKJT0zgsWe6JD+fP9vbSTvisSbDlSnTLaoD8tJEKlFgdegBGVZNogW8Stb1t5BPBvqGyf8B8YdeWJFcTK5BxA0z+78SO4uGx5HHNct8p4Evwp/e2abRLlsvyWen9V2G5b0XsmUpuCHy3TWM9Si1Zbh3AboL8dds0GqWWWwGBFOOnUzN+lFodB0QrGvD21DRE+sB3oVPuAoeg4vCmBniHKEAuKPkTJzds05DLjdcozw8CB/KeA+gpvZ+LOjRIkXhjPuqNR4FD0U5ENApt9BqiUT8KvGp1jhi0EZUrLOnqfqfMTF+jz/D/BM9M6htzUVfp1/l4c81dArzwpOaSXN5ETV2Am8z+cyIiKasVgT75cxo79+4CEuv4VAVkVDIJ5JyZi8XYkrnn5jQdFQJ7JZNBjhrgIKmupyqZgaQPbhLRi4YqYc82DUnFeCW2RZkg7NriZkJdTvX1VG0xkFsmhmUGTniA6rTtUV4BUeYT+XU8tswmjz7AgcCDXtJlcKrRhyDt0nO4rJ4GlMNdKbY7hfXzR6CXdTBVxjNUKoF9IANHrPd3phr2oucX9tycrqebNAc87MYNd9Ezn/dAn17h9DtnFvE/Te/ELro10CgAAAAASUVORK5CYII="/>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAqdJREFUSEvVlkFO21AQhv9xXDWsoDuMKpGcgCSwLz0B4QBUSYUjdVVuQHKCpiukGCmUCxROULouGCN1D4sqVldNVkRq8qYa2wnGscEBpNC3S/Lyvjf//G9mCDNaNCMunje40L5coL/ZlTTq8Iv+hVPNd+/bmxixwLTB3C6Iy2Dk7jvo1u+EKzAdKf26kXSJWPCa5a4rQjsE7AFwUsILAOa9vYQrpYabTu31xH8nwF6kw+y5QAl8PBzQjvPBuEoJ9bYVWr8KGmWaAN548Ey/GI18Alza7zTB9FGgZ+ZSeRqg7C3u/97KsKJT0zgsWe6JD+fP9vbSTvisSbDlSnTLaoD8tJEKlFgdegBGVZNogW8Stb1t5BPBvqGyf8B8YdeWJFcTK5BxA0z+78SO4uGx5HHNct8p4Evwp/e2abRLlsvyWen9V2G5b0XsmUpuCHy3TWM9Si1Zbh3AboL8dds0GqWWWwGBFOOnUzN+lFodB0QrGvD21DRE+sB3oVPuAoeg4vCmBniHKEAuKPkTJzds05DLjdcozw8CB/KeA+gpvZ+LOjRIkXhjPuqNR4FD0U5ENApt9BqiUT8KvGp1jhi0EZUrLOnqfqfMTF+jz/D/BM9M6htzUVfp1/l4c81dArzwpOaSXN5ETV2Am8z+cyIiKasVgT75cxo79+4CEuv4VAVkVDIJ5JyZi8XYkrnn5jQdFQJ7JZNBjhrgIKmupyqZgaQPbhLRi4YqYc82DUnFeCW2RZkg7NriZkJdTvX1VG0xkFsmhmUGTniA6rTtUV4BUeYT+XU8tswmjz7AgcCDXtJlcKrRhyDt0nO4rJ4GlMNdKbY7hfXzR6CXdTBVxjNUKoF9IANHrPd3phr2oucX9tycrqebNAc87MYNd9Ezn/dAn17h9DtnFvE/Te/ELro10CgAAAAASUVORK5CYII=" />
                 </a>
                 <a href="">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAytJREFUSEvFVk1O20AU/p5x1XSVsMMRUpMbBLd7wg3oCRokHKkrwgkKJyBdVcJIpCcATgDdFyecICBVeFmzIlWdedWMfzoOE0goUryy7Dfzzfvme997hAU9tCBczA383g+bMahsgRvy0AI0IOao33a+z5PETMCNw58Ny1raAdMmwBUzAEUgPhV/sD/45Fw/dYhHgRvHw4o1Lh2A0Xpqo8J/Qk8sjXYHW/Vo2rqpwGmWJ2DUDIvvRIwGSqPIiksyu/JkDIEGY463Bu3VgQncCKxAyT7XaJX3dwHgc7IJ7wZetSvf3MOwBcKx+kz8BUzy7teTOIoExxsm8AfAKb39PFPGVtB2eq4fyszeArgJPKfAQv6PcB1sO3X9MCpz+35jkvYHwGt+2CPgY5JYApowsNSfzDajUAeygI0fnnOhf2PgW99zCjopAOsAerB7dNsF044qH3u0bBKN64dSSGUCn1161U0ZqychYtR1tReAtUAlnizQ9UN5v+tgvgraVVW/k8+/tRQF3sqy/N/4GtYsG8OEvGLWBeDs1JNBrh9yJp5gu9oxAbv+bQegg0lWTAdSsss2kY4kgHP9btWpZS3HpV9p3H7gOXsmYH19ds+Tqte/58Dvjm43melEnYbQEgLKfSxQg4lV6RBTR4CNdclEFQt8mpZRlzl5tyzUmNFL9uUPl9tV9T0Hdv1QZpLWqSmnF/mWM7Z4YJ1qWb8WJVQL1YUS0UjHskBTqOZKdlXSwSwmRamQlps6m5HqaeJSAslUDby8uFIAZQLPKifNswWP1zJ/1r0h8Jy8pU4zEOhOkxmI9N1Lb2XNJDMTwMwGsjDLlJmYmsRj9y/XmP7P1SQ0p5LKlS0w71BZ6zPRnXs5cCfsUc2KX7fySmC+Eq9+N59siwo8aYOyMajJgpMh4CZrl3pZFBwPfCZAZQKaqQ7uBI+bMw0CmXBScFmLSeaFhyJh39eVJcZvhsYBUGYK0Zpr9MnBj4cVikvdfDCY0TVlObI96jxr2NMxZFmQjT0CZIN/MNhltDJwyjH2/nu8NSUoFcyk7FENBEQ8IKZIjjszEqLCZhro59lw1tiFAf8Fc/37Ln5Pd80AAAAASUVORK5CYII="/>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAytJREFUSEvFVk1O20AU/p5x1XSVsMMRUpMbBLd7wg3oCRokHKkrwgkKJyBdVcJIpCcATgDdFyecICBVeFmzIlWdedWMfzoOE0goUryy7Dfzzfvme997hAU9tCBczA383g+bMahsgRvy0AI0IOao33a+z5PETMCNw58Ny1raAdMmwBUzAEUgPhV/sD/45Fw/dYhHgRvHw4o1Lh2A0Xpqo8J/Qk8sjXYHW/Vo2rqpwGmWJ2DUDIvvRIwGSqPIiksyu/JkDIEGY463Bu3VgQncCKxAyT7XaJX3dwHgc7IJ7wZetSvf3MOwBcKx+kz8BUzy7teTOIoExxsm8AfAKb39PFPGVtB2eq4fyszeArgJPKfAQv6PcB1sO3X9MCpz+35jkvYHwGt+2CPgY5JYApowsNSfzDajUAeygI0fnnOhf2PgW99zCjopAOsAerB7dNsF044qH3u0bBKN64dSSGUCn1161U0ZqychYtR1tReAtUAlnizQ9UN5v+tgvgraVVW/k8+/tRQF3sqy/N/4GtYsG8OEvGLWBeDs1JNBrh9yJp5gu9oxAbv+bQegg0lWTAdSsss2kY4kgHP9btWpZS3HpV9p3H7gOXsmYH19ds+Tqte/58Dvjm43melEnYbQEgLKfSxQg4lV6RBTR4CNdclEFQt8mpZRlzl5tyzUmNFL9uUPl9tV9T0Hdv1QZpLWqSmnF/mWM7Z4YJ1qWb8WJVQL1YUS0UjHskBTqOZKdlXSwSwmRamQlps6m5HqaeJSAslUDby8uFIAZQLPKifNswWP1zJ/1r0h8Jy8pU4zEOhOkxmI9N1Lb2XNJDMTwMwGsjDLlJmYmsRj9y/XmP7P1SQ0p5LKlS0w71BZ6zPRnXs5cCfsUc2KX7fySmC+Eq9+N59siwo8aYOyMajJgpMh4CZrl3pZFBwPfCZAZQKaqQ7uBI+bMw0CmXBScFmLSeaFhyJh39eVJcZvhsYBUGYK0Zpr9MnBj4cVikvdfDCY0TVlObI96jxr2NMxZFmQjT0CZIN/MNhltDJwyjH2/nu8NSUoFcyk7FENBEQ8IKZIjjszEqLCZhro59lw1tiFAf8Fc/37Ln5Pd80AAAAASUVORK5CYII=" />
                 </a>
         </div>
     </section>

@@ -1,0 +1,261 @@
+/* Estilo geral */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+
+.h2 {
+    margin: 30px;
+}
+
+
+button:hover {
+    opacity: 0.5;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-image: url(../img/capa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+nav ul li {
+  margin-right: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ul li a:hover {
+  opacity: 0.5;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+h1 {
+  font-size: 90px;
+  font-weight: 500;
+  width: 600px;
+  text-align: center;
+  background-color: rgba(164, 170, 159, 0.4);
+}
+
+/* Estilo da seção "Ofertas do Dia" */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  margin-right: 20px;
+}
+.card img {
+  width: 200px;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+
+.container {
+  padding: 10px;
+}
+
+.card .container h3,
+.card .container h5,
+.card .container span,
+.card .container button {
+  display: block;
+  text-align: center;
+}
+
+.card .container button {
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+/* Estilo da seção "Box em Ofertas" */
+.box {
+  background-color: #f1f1f1;
+  padding: 40px;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px;
+}
+
+.box__circle {
+  display: inline;
+  margin-right: 20px;
+}
+
+.box__circle img {
+  width: 200px;
+}
+
+/* Estilo da seção "Offers" */
+.Offers {
+  padding: 30px;
+}
+
+.link__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(25, 26, 65);
+    width: 400px;
+}
+
+.Offers button {
+   padding: 10px 20px;
+   margin-left: 30px;
+   margin-top: 10px;
+}
+
+/* Estilo da seção "Dicas de Leituras" */
+iframe {
+  margin-bottom: 20px;
+  margin-top: 20px; 
+  margin-left: 10px;
+}
+
+/* Estilo da seção "Localização" */
+.location {
+  padding: 20px;
+}
+
+.location iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+/* Estilo da seção "Redes Sociais" */
+.social {
+  background-color: #f1f1f1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social img {
+  width: 200px;
+  margin-right: 90px;
+}
+
+.netssocial {
+  display: inline;
+}
+
+.netssocial h3 {
+  margin-bottom: 10px;
+}
+
+.netssocial a {
+  margin-bottom: 10px;
+  padding: 15px;
+
+}
+
+.netssocial a img {
+  width: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+footer {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        margin-top: 50px;
+        font-size: 54px;
+    }
+
+    .boxes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Offers button {
+       margin: 10px;
+    }
+
+    iframe {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+    .social {
+        display: flex;
+        flex-direction: column;
+    }
+    .netssocial h3,
+    .social img {
+        margin: 10px;
+    }
+}
