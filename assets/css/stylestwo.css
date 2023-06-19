@@ -1,0 +1,23 @@
+@import url("style.css");
+
+.about {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.about p {
+    width: 800px;
+    margin: 20px;
+    line-height: 35px;
+}
+
+.about a {
+    text-align: center;
+    color: #000;
+}
+
+.about a:hover {
+    opacity: 0.4;
+}
